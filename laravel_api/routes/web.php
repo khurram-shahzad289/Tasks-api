@@ -23,4 +23,5 @@ Route::prefix('auth')->group(function (){
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/tasks', [\App\Http\Controllers\TaskViewController::class,'index']);
 
